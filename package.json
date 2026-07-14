@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "retain:data": "node scripts/retain-daily-data.mjs"
+    "retain:data": "node scripts/retain-daily-data.mjs",
+    "publish:daily": "node scripts/publish-daily-report.mjs"
   },
   "dependencies": {
     "react": "^19.2.7",

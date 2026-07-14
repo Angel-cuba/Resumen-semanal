@@ -10,6 +10,8 @@ SPA en React + TypeScript para visualizar el resumen diario de correos laborales
 - Abre un panel lateral con el detalle completo de cada oportunidad y sus enlaces funcionales.
 - Genera URLs compartibles por fecha e item: `/?date=2026-07-14&item=real-hired-react-node-0714`.
 - Mantiene una ventana visible maxima de 7 dias de reportes.
+- Separa el corte por pestanas de `LinkedIn`, `Indeed` y `Otras fuentes`.
+- Expone detalle ampliado de empresa, estado de aplicacion, ruta de candidatura y enlaces externos por item.
 
 ## Desarrollo local
 
@@ -65,11 +67,21 @@ Cada `item` del arreglo `items` debe incluir:
 - `experienceRequired`, `compatibleExperience`
 - `risks`, `advantages`, `whyApply`, `emailKind`
 
+Campos opcionales recomendados para el detalle enriquecido:
+
+- `sourcePlatform`, `sourceLabel`
+- `companyOverview`, `companyIndustry`, `companySize`, `companyStage`, `companyLocation`
+- `companyWebsite`, `companySignals`
+- `applicationStatus`, `applicationRoute`, `employmentType`, `salaryRange`, `relocationSupport`
+- `recruiterName`
+- `links[]` con formato `{ "label": "Abrir email origen", "url": "https://..." }`
+
 ## Flujo diario esperado
 
 1. El proceso diario analiza correos y genera `public/data/daily/YYYY-MM-DD.json`.
 2. Ejecuta `npm run retain:data` para conservar solo las 7 fechas mas recientes y regenerar `public/data/manifest.json`.
-3. El deploy estatico publica la SPA y la fecha queda visible desde el selector.
+3. Ejecuta `npm run publish:daily -- YYYY-MM-DD` para validar, crear commit con fecha y hacer push a `main`.
+4. Netlify publica la SPA desde el push y la fecha queda visible desde el selector.
 
 ## Politica de retencion
 
@@ -78,6 +90,20 @@ Cada `item` del arreglo `items` debe incluir:
 - El manifiesto se recalcula automaticamente para que `latestDate` y `availableDates` siempre reflejen solo la semana activa.
 - En el flujo diario de Gmail, los correos laborales mas antiguos que la ventana retenida deben moverse a Trash.
 - Tambien se pueden mover a Trash correos del dia clasificados como `descartada`, `irrelevante`, `newsletter` o confirmaciones de candidatura ya registradas, siempre que no haya seguimiento activo pendiente.
+
+## Publish diario
+
+```bash
+npm run publish:daily -- 2026-07-15
+```
+
+Ese comando:
+
+- ejecuta `npm run retain:data`
+- ejecuta `npm run build`
+- hace `git add .`
+- crea un commit con mensaje `Daily report 2026-07-15`
+- hace `git push origin main`
 
 ## Deploy
 
