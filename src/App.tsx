@@ -68,6 +68,7 @@ type DailyReport = {
 }
 
 type Manifest = {
+  retentionDays?: number
   latestDate: string
   availableDates: string[]
 }
@@ -304,6 +305,9 @@ function App() {
           <p className="eyebrow">Resumen laboral diario</p>
           <h1>Resumen</h1>
           <p className="hero-summary">{report.summary}</p>
+          <p className="retention-note">
+            Historial visible: maximo {manifest.retentionDays ?? 7} dias. Los cortes mas antiguos se eliminan del dashboard.
+          </p>
           <p className="visual-here">
             <strong>Visual here:</strong>{' '}
             <a href={resolveVisualUrl(report.visualUrl)} target="_blank" rel="noreferrer">

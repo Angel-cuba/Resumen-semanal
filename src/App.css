@@ -51,6 +51,12 @@
   color: #5c6b77;
 }
 
+.retention-note {
+  margin: 14px 0 0;
+  color: #425260;
+  font-size: 0.94rem;
+}
+
 .visual-here {
   margin-top: 16px;
   font-size: 0.96rem;

@@ -9,6 +9,7 @@ SPA en React + TypeScript para visualizar el resumen diario de correos laborales
 - Permite filtrar por categoria, nivel, decision, prioridad, match score y texto.
 - Abre un panel lateral con el detalle completo de cada oportunidad y sus enlaces funcionales.
 - Genera URLs compartibles por fecha e item: `/?date=2026-07-14&item=real-hired-react-node-0714`.
+- Mantiene una ventana visible maxima de 7 dias de reportes.
 
 ## Desarrollo local
 
@@ -29,6 +30,7 @@ npm run build
 
 ```json
 {
+  "retentionDays": 7,
   "latestDate": "2026-07-14",
   "availableDates": ["2026-07-14"]
 }
@@ -66,8 +68,16 @@ Cada `item` del arreglo `items` debe incluir:
 ## Flujo diario esperado
 
 1. El proceso diario analiza correos y genera `public/data/daily/YYYY-MM-DD.json`.
-2. Actualiza `public/data/manifest.json` con la fecha nueva.
+2. Ejecuta `npm run retain:data` para conservar solo las 7 fechas mas recientes y regenerar `public/data/manifest.json`.
 3. El deploy estatico publica la SPA y la fecha queda visible desde el selector.
+
+## Politica de retencion
+
+- El dashboard conserva un maximo de 7 dias naturales visibles.
+- Al entrar un nuevo dia, cualquier JSON fuera de esa ventana se borra del directorio `public/data/daily/`.
+- El manifiesto se recalcula automaticamente para que `latestDate` y `availableDates` siempre reflejen solo la semana activa.
+- En el flujo diario de Gmail, los correos laborales mas antiguos que la ventana retenida deben moverse a Trash.
+- Tambien se pueden mover a Trash correos del dia clasificados como `descartada`, `irrelevante`, `newsletter` o confirmaciones de candidatura ya registradas, siempre que no haya seguimiento activo pendiente.
 
 ## Deploy
 
