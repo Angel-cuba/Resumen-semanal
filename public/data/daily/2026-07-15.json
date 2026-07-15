@@ -1,0 +1,74 @@
+{
+  "date": "2026-07-15",
+  "source": "Estado de producto + conectores + tarea pendiente",
+  "visualUrl": "/?date=2026-07-15",
+  "summary": "Dia de ajuste del dashboard. La UI ya soporta conectores, recruiters y pestañas por canal, pero queda pendiente para el siguiente corte completar cualquier hueco restante del historico semanal con datos reales cuando existan.",
+  "searchFocus": [
+    "Malta primero",
+    "Italia/Sicilia fallback",
+    "Completar historico semanal"
+  ],
+  "connectorFindings": [
+    {
+      "connector": "gmail",
+      "status": "ok",
+      "headline": "Gmail sigue siendo la base",
+      "detail": "La limpieza de correos despues de 7 dias debe mantenerse como regla diaria."
+    },
+    {
+      "connector": "indeed",
+      "status": "limited",
+      "headline": "Indeed util solo via fallback geografico",
+      "detail": "Malta no esta soportado; el fallback sigue siendo Sicilia/sur de Italia."
+    },
+    {
+      "connector": "linkedin",
+      "status": "error",
+      "headline": "LinkedIn instalado pero inestable",
+      "detail": "People search siguio devolviendo 404 en pruebas validas y queda pendiente revisarlo de nuevo manana."
+    }
+  ],
+  "topActions": [
+    "Empujar hoy el estado actual a produccion.",
+    "Manana verificar si LinkedIn people search deja de fallar.",
+    "Manana confirmar si existe algun hueco real adicional en los snapshots semanales."
+  ],
+  "stats": {
+    "total": 1,
+    "aplicar": 0,
+    "revisar": 1,
+    "descartar": 0,
+    "alta": 1
+  },
+  "items": [
+    {
+      "id": "2026-07-15-pending",
+      "section": "urgente",
+      "title": "Pendiente para el siguiente resumen diario",
+      "company": "Resumen diario",
+      "location": "Dashboard",
+      "workMode": "Local + Netlify",
+      "level": "unknown",
+      "decision": "revisar",
+      "priority": "alta",
+      "matchScore": 100,
+      "emailDate": "2026-07-15 09:00 UTC",
+      "sender": "Automatizacion",
+      "summary": "Queda pendiente volver a probar LinkedIn y confirmar que el historico semanal siga completo con datos reales.",
+      "rationale": "Es una tarea operativa del flujo, no una oferta.",
+      "nextAction": "Mañana reintentar enriquecimiento de LinkedIn y seguir borrando emails fuera de la ventana de 7 dias.",
+      "stackMatch": ["Automatizacion", "Retencion 7 dias", "LinkedIn/Indeed/Gmail"],
+      "missingSkills": ["Respuesta valida del conector LinkedIn"],
+      "experienceRequired": "No aplica.",
+      "compatibleExperience": "No aplica.",
+      "risks": ["Que LinkedIn siga fallando y no enriquezca recruiters."],
+      "advantages": ["La SPA ya esta lista para absorber ese dato cuando exista."],
+      "whyApply": "No es una candidatura; es seguimiento de la automatizacion.",
+      "emailKind": "Pendiente operativo",
+      "sourcePlatform": "other",
+      "sourceLabel": "Otras fuentes",
+      "applicationStatus": "Pendiente para manana",
+      "applicationRoute": "Resumen diario"
+    }
+  ]
+}

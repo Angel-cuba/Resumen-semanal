@@ -31,6 +31,22 @@ type ExternalLink = {
   url: string
 }
 
+type ConnectorFinding = {
+  connector: 'gmail' | 'indeed' | 'linkedin'
+  status: 'ok' | 'limited' | 'error'
+  headline: string
+  detail: string
+}
+
+type LinkedInPeopleTarget = {
+  name: string
+  title?: string
+  company?: string
+  location?: string
+  note: string
+  profileUrl?: string
+}
+
 type ReportItem = {
   id: string
   section: SectionKey
@@ -72,6 +88,7 @@ type ReportItem = {
   relocationSupport?: string
   recruiterName?: string
   links?: ExternalLink[]
+  linkedInPeopleTargets?: LinkedInPeopleTarget[]
 }
 
 type DailyReport = {
@@ -79,6 +96,8 @@ type DailyReport = {
   source: string
   visualUrl: string
   summary: string
+  searchFocus?: string[]
+  connectorFindings?: ConnectorFinding[]
   topActions: string[]
   stats: {
     total: number
@@ -472,6 +491,15 @@ function App() {
             </a>
             <span>{resolveVisualUrl(report.visualUrl)}</span>
           </div>
+          {report.searchFocus?.length ? (
+            <div className="chip-row chip-row-hero">
+              {report.searchFocus.map((focus) => (
+                <span key={focus} className="chip chip-good">
+                  {focus}
+                </span>
+              ))}
+            </div>
+          ) : null}
         </div>
 
         <div className="hero-side">
@@ -530,6 +558,27 @@ function App() {
           ))}
         </div>
       </section>
+
+      {report.connectorFindings?.length ? (
+        <section className="connector-panel">
+          <div className="filters-head">
+            <div>
+              <p className="eyebrow">Conectores</p>
+              <h2>Estado real de las fuentes</h2>
+            </div>
+          </div>
+
+          <div className="connector-grid">
+            {report.connectorFindings.map((entry) => (
+              <article key={entry.connector} className={`connector-card status-${entry.status}`}>
+                <span className="connector-label">{entry.connector}</span>
+                <h3>{entry.headline}</h3>
+                <p>{entry.detail}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       <section className="top-actions">
         {report.topActions.map((action) => (
@@ -888,6 +937,30 @@ function App() {
                   </div>
                 </div>
               </div>
+
+              {selectedItem.linkedInPeopleTargets?.length ? (
+                <div className="detail-block">
+                  <h3>Targets de LinkedIn</h3>
+                  <div className="people-grid">
+                    {selectedItem.linkedInPeopleTargets.map((person) => (
+                      <article key={`${selectedItem.id}-${person.name}`} className="person-card">
+                        <strong>{person.name}</strong>
+                        <span>{detailOrFallback(person.title)}</span>
+                        <span>{detailOrFallback(person.company)}</span>
+                        <span>{detailOrFallback(person.location)}</span>
+                        <p>{person.note}</p>
+                        {person.profileUrl ? (
+                          <a href={person.profileUrl} target="_blank" rel="noreferrer">
+                            Abrir perfil
+                          </a>
+                        ) : (
+                          <span className="link-disabled person-link-disabled">Perfil no disponible</span>
+                        )}
+                      </article>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
 
               <div className="detail-block">
                 <h3>Skills que coinciden</h3>

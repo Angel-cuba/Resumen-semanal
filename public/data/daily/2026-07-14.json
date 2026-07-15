@@ -3,6 +3,31 @@
   "source": "CV real local + Gmail real desde la ultima ejecucion",
   "visualUrl": "/?date=2026-07-14",
   "summary": "Corte real posterior al 2026-07-13 08:02 UTC. Hoy no hay permiso directo de aplicar solo desde el email. Las mejores revisiones son Hired, MVST y Grupo TECDATA Engineering. TaDa Gaming queda como pipeline vivo ya aplicado y BettingJobs pasa a cierre por rechazo.",
+  "searchFocus": [
+    "Malta primero",
+    "Italia y Sicilia como fallback",
+    "Junior / entry React-Node-React Native"
+  ],
+  "connectorFindings": [
+    {
+      "connector": "gmail",
+      "status": "ok",
+      "headline": "Gmail operativo",
+      "detail": "La base del corte sigue viniendo de correos reales y permite limpieza posterior del inbox."
+    },
+    {
+      "connector": "indeed",
+      "status": "limited",
+      "headline": "Indeed util con fallback geografico",
+      "detail": "Indeed no soporta MT como pais de busqueda. Hoy sirve mejor para Sicilia, Catania y sur de Italia."
+    },
+    {
+      "connector": "linkedin",
+      "status": "error",
+      "headline": "LinkedIn conectado pero People Search falla",
+      "detail": "El conector instalado expone busqueda de personas, no vacantes, y hoy responde 404 incluso en consultas validas."
+    }
+  ],
   "topActions": [
     "Abrir primero Hired y confirmar si el JD sigue dentro de 0-3 anos o mid-low razonable.",
     "Abrir MVST y validar si la combinacion web + mobile realmente pide React Native o solo la menciona de forma lateral.",
@@ -47,6 +72,16 @@
       "salaryRange": "No visible en el email.",
       "relocationSupport": "No visible en el email.",
       "companySignals": ["React + Node.js", "Remoto UE", "Sin seniority explicita en asunto"],
+      "linkedInPeopleTargets": [
+        {
+          "name": "Hiring manager no visible",
+          "title": "No visible en el email.",
+          "company": "Hired",
+          "location": "Union Europea",
+          "note": "Cuando LinkedIn people search deje de fallar, aqui deberian aparecer recruiters o managers de la empresa/cliente final.",
+          "profileUrl": ""
+        }
+      ],
       "links": [
         {
           "label": "Abrir email en Gmail",
@@ -149,6 +184,16 @@
       "salaryRange": "No visible en el email.",
       "relocationSupport": "No visible en el email.",
       "companySignals": ["React + Node.js", "Remoto", "Madrid"],
+      "linkedInPeopleTargets": [
+        {
+          "name": "Recruiter o hiring lead no visible",
+          "title": "No visible en el email.",
+          "company": "Grupo TECDATA Engineering",
+          "location": "Madrid",
+          "note": "Candidato claro a enriquecer con LinkedIn cuando el conector de personas responda bien.",
+          "profileUrl": ""
+        }
+      ],
       "links": [
         {
           "label": "Abrir email en Gmail",
