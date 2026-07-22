@@ -38,6 +38,17 @@ type ConnectorFinding = {
   detail: string
 }
 
+type AutomationRule = {
+  title: string
+  detail: string
+  status: 'activo' | 'conservador' | 'limitado'
+}
+
+type CombinationStep = {
+  title: string
+  detail: string
+}
+
 type LinkedInPeopleTarget = {
   name: string
   title?: string
@@ -232,6 +243,108 @@ const platformLabel: Record<SourcePlatform, string> = {
   other: 'Otra fuente',
 }
 
+const automationLogic: {
+  purpose: string
+  channels: AutomationRule[]
+  autoApplyRules: AutomationRule[]
+  notifyRules: AutomationRule[]
+  calendarRules: AutomationRule[]
+  combinationSteps: CombinationStep[]
+} = {
+  purpose:
+    'La SPA ahora deja visible como combinar Gmail, LinkedIn, Indeed y una capa tipo Agent Reach para encontrar mas oportunidades, aplicar solo cuando sea seguro y avisarte cuando haya continuidad real.',
+  channels: [
+    {
+      title: 'Gmail como fuente base diaria',
+      detail:
+        'Seguimos tratando Gmail como el corte principal del dia: alertas, replies de recruiters, entrevistas, urgencias y newsletters salen de aqui primero.',
+      status: 'activo',
+    },
+    {
+      title: 'Indeed y LinkedIn como ramas de enriquecimiento',
+      detail:
+        'Cuando un conector trae resultados validos, la SPA los separa por origen para que no se mezclen con el corte base ni te inflen falsas opciones.',
+      status: 'activo',
+    },
+    {
+      title: 'Descubrimiento adicional tipo Agent Reach',
+      detail:
+        'La logica prevista es usar outreach y busqueda asistida para ampliar empresas y vacantes afines, pero manteniendo el mismo filtro junior-first y el mismo criterio conservador.',
+      status: 'conservador',
+    },
+  ],
+  autoApplyRules: [
+    {
+      title: 'Autoaplicar solo con permiso claro',
+      detail:
+        'Solo deberia dispararse candidatura automatica cuando el rol sea junior, intern, trainee, graduate o 0-3 anos, encaje con React/TypeScript/Node/Spring Boot y no tenga senales de seniority o relocation imposible.',
+      status: 'conservador',
+    },
+    {
+      title: 'Freno automatico ante duda',
+      detail:
+        'Si faltan datos clave de modalidad, pais, seniority o stack principal, la salida correcta sigue siendo `revisar`, no `aplicar`.',
+      status: 'activo',
+    },
+    {
+      title: 'Nada de autoaplicar a roles fuera de alcance',
+      detail:
+        'Senior, lead, staff, architect, manager, 5+ anos obligatorios o stacks dominados por cloud, DevOps, AI/ML o data engineering quedan bloqueados para candidatura automatica.',
+      status: 'activo',
+    },
+  ],
+  notifyRules: [
+    {
+      title: 'Avisar cuando aparezca continuidad real',
+      detail:
+        'Recruiters, respuestas, entrevistas, take-homes, follow-ups y cualquier cambio de estado deben destacarse por encima de nuevas alertas frias.',
+      status: 'activo',
+    },
+    {
+      title: 'Separar urgencias operativas del radar laboral',
+      detail:
+        'Mensajes de GitHub, cuentas o bloqueos tecnicos se muestran como urgentes, pero fuera del bloque de oportunidades aplicables.',
+      status: 'activo',
+    },
+  ],
+  calendarRules: [
+    {
+      title: 'Calendar solo para compromisos concretos',
+      detail:
+        'Entrevistas, calls, deadlines, recordatorios de follow-up y respuestas con fecha deben convertirse en siguiente accion visible y quedar listas para agenda.',
+      status: 'conservador',
+    },
+    {
+      title: 'No calendarizar ruido',
+      detail:
+        'Newsletters, descartes y alertas frias sin accion concreta no deben ocupar calendario.',
+      status: 'activo',
+    },
+  ],
+  combinationSteps: [
+    {
+      title: '1. Detectar',
+      detail:
+        'Unificar correos, alertas y hallazgos externos en un mismo corte diario con separacion clara por fuente.',
+    },
+    {
+      title: '2. Filtrar',
+      detail:
+        'Aplicar el filtro CV-first y junior-first antes de considerar cualquier outreach o candidatura.',
+    },
+    {
+      title: '3. Autoaplicar solo cuando sea seguro',
+      detail:
+        'Si el match es alto y no hay riesgos claros de seniority, stack o geografia, la automatizacion puede preparar la candidatura.',
+    },
+    {
+      title: '4. Avisar y agendar continuidad',
+      detail:
+        'Toda respuesta, entrevista o tarea con fecha debe terminar en aviso visible y lista para calendarizar.',
+    },
+  ],
+}
+
 function readQueryParams() {
   const params = new URLSearchParams(window.location.search)
   const tab = params.get('tab')
@@ -302,6 +415,25 @@ function getExternalLinks(item: ReportItem, platform: SourcePlatform) {
 
 function detailOrFallback(value?: string) {
   return value?.trim() ? value : 'No visible en el email.'
+}
+
+function renderLogicCards(title: string, entries: AutomationRule[]) {
+  return (
+    <article className="logic-card">
+      <h3>{title}</h3>
+      <div className="logic-list">
+        {entries.map((entry) => (
+          <div key={`${title}-${entry.title}`} className="logic-item">
+            <div className="logic-item-head">
+              <strong>{entry.title}</strong>
+              <span className={`logic-status status-${entry.status}`}>{entry.status}</span>
+            </div>
+            <p>{entry.detail}</p>
+          </div>
+        ))}
+      </div>
+    </article>
+  )
 }
 
 function App() {
@@ -587,6 +719,33 @@ function App() {
             <p>{action}</p>
           </article>
         ))}
+      </section>
+
+      <section className="automation-panel">
+        <div className="filters-head">
+          <div>
+            <p className="eyebrow">Automatizacion visible</p>
+            <h2>Como se combina el radar y que se automatiza</h2>
+          </div>
+        </div>
+
+        <p className="automation-summary">{automationLogic.purpose}</p>
+
+        <div className="combination-strip">
+          {automationLogic.combinationSteps.map((step) => (
+            <article key={step.title} className="step-card">
+              <h3>{step.title}</h3>
+              <p>{step.detail}</p>
+            </article>
+          ))}
+        </div>
+
+        <div className="automation-grid">
+          {renderLogicCards('Fuentes y descubrimiento', automationLogic.channels)}
+          {renderLogicCards('Reglas de autoaplicacion', automationLogic.autoApplyRules)}
+          {renderLogicCards('Avisos y seguimiento', automationLogic.notifyRules)}
+          {renderLogicCards('Criterio de calendarizacion', automationLogic.calendarRules)}
+        </div>
       </section>
 
       <section className="filters-panel">

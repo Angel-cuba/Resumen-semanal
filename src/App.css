@@ -15,6 +15,7 @@
 
 .hero,
 .source-tabs-panel,
+.automation-panel,
 .filters-panel,
 .section-card,
 .detail-panel,
@@ -176,6 +177,7 @@
 
 .source-tabs-panel,
 .connector-panel,
+.automation-panel,
 .filters-panel {
   padding: 22px;
   margin-bottom: 20px;
@@ -280,6 +282,85 @@
 .top-actions {
   margin-bottom: 20px;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.automation-summary {
+  margin: 0 0 18px;
+  color: #334155;
+  max-width: 96ch;
+}
+
+.automation-grid,
+.combination-strip,
+.logic-list {
+  display: grid;
+  gap: 14px;
+}
+
+.combination-strip {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-bottom: 18px;
+}
+
+.step-card,
+.logic-card {
+  padding: 18px;
+  border-radius: 22px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.05);
+}
+
+.step-card h3,
+.logic-card h3,
+.logic-item strong {
+  margin: 0;
+  color: #0f172a;
+}
+
+.step-card p,
+.logic-item p {
+  margin: 8px 0 0;
+  color: #516072;
+}
+
+.automation-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.logic-item + .logic-item {
+  padding-top: 12px;
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.logic-item-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.logic-status {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.status-activo {
+  background: rgba(15, 118, 110, 0.12);
+  color: #0f766e;
+}
+
+.status-conservador {
+  background: rgba(245, 158, 11, 0.15);
+  color: #9a6700;
+}
+
+.status-limitado {
+  background: rgba(148, 163, 184, 0.18);
+  color: #475569;
 }
 
 .action-card {
@@ -642,6 +723,7 @@
   }
 
   .hero,
+  .automation-panel,
   .source-tabs-panel,
   .filters-panel,
   .section-card,
