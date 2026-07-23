@@ -1,0 +1,404 @@
+{
+  "date": "2026-07-23",
+  "source": "CV local real + Gmail real + Indeed fallback Italia (Milano)",
+  "visualUrl": "file:///Users/developer/resumen/dist/index.html?date=2026-07-23",
+  "summary": "El corte real del jueves 23 de julio de 2026 vuelve a ser corto, pero no vacio: Gmail si trajo una carta defendible para revisar (`Hired - Fullstack Developer (React/Node.js) (Remote)`), una alerta frontera por Malta (`Betsson - Frontend Software Engineer - Gaming`) y ruido claro (`Betsson Senior`, digest falso de Indeed y GitHub Actions). Indeed repitio hoy el limite exacto `Unsupported country code: MT`, asi que la rama complementaria se movio de forma visible a Milano; ahi las dos cartas que merecen tiempo son `PwC - Full Stack Developer Junior - Milano [IFS]` y, bastante por detras, `DigitalMinds - Junior Full Stack Developer Gestionale`. No hay ninguna oferta nueva con permiso limpio de aplicar sin abrir el JD completo. Dashboard local esperado tras build: file:///Users/developer/resumen/dist/index.html?date=2026-07-23. URL publicada esperada tras push: https://resumensemanal.netlify.app/?date=2026-07-23.",
+  "searchFocus": [
+    "Junior, trainee, graduate y fullstack/frontend de 0-3 anos antes que senior, lead o architect",
+    "React, React Native, TypeScript, Node.js, NestJS, Spring Boot y producto digital",
+    "Malta primero; Indeed con fallback visible a Italia cuando MT no esta soportado"
+  ],
+  "connectorFindings": [
+    {
+      "connector": "gmail",
+      "status": "ok",
+      "headline": "Gmail siguio siendo la fuente base real del dia",
+      "detail": "Entre el cierre del 2026-07-22 y hoy entraron una alerta util de Hired/LinkedIn, una alerta frontera de Betsson Malta, un descarte senior claro y ruido operativo de GitHub."
+    },
+    {
+      "connector": "indeed",
+      "status": "limited",
+      "headline": "Indeed volvio a fallar con Malta el 2026-07-23",
+      "detail": "El conector devolvio `Unsupported country code: MT`; el fallback visible a Milano si produjo resultados y rescato sobre todo PwC Junior, con DigitalMinds como opcion secundaria."
+    },
+    {
+      "connector": "linkedin",
+      "status": "ok",
+      "headline": "LinkedIn aporto la mejor carta del corte y tambien el descarte mas claro",
+      "detail": "Hired React/Node remoto queda en revisar alta; Betsson Senior Fullstack queda descartada en automatico."
+    }
+  ],
+  "topActions": [
+    "Abrir primero `Hired - Fullstack Developer (React/Node.js) (Remote)` y aplicar solo si el JD confirma 0-3 anos o una barra mid-low razonable.",
+    "Revisar despues `PwC - Full Stack Developer Junior - Milano [IFS]`; es la mejor carta de Indeed hoy por junior explicito, stack web y rango salarial visible.",
+    "Dejar `DigitalMinds` y `Betsson Frontend Gaming` como revisiones secundarias; no gastar tiempo en `Betsson Senior`, el digest falso de Indeed ni el fallo de GitHub durante el bloque de postulacion."
+  ],
+  "stats": {
+    "total": 8,
+    "aplicar": 0,
+    "revisar": 4,
+    "descartar": 2,
+    "alta": 4
+  },
+  "items": [
+    {
+      "id": "2026-07-23-hired-react-node-remote",
+      "section": "revisar",
+      "title": "Fullstack Developer (React/Node.js) (Remote)",
+      "company": "Hired",
+      "location": "Union Europea",
+      "workMode": "Remoto",
+      "level": "unknown",
+      "decision": "revisar",
+      "priority": "alta",
+      "matchScore": 86,
+      "emailDate": "2026-07-22 08:50 UTC",
+      "sender": "Alertas de empleo de LinkedIn <jobalerts-noreply@linkedin.com>",
+      "summary": "Sigue siendo la carta mas limpia del corte real: React + Node.js, remoto y sin palabras senior en el titulo visible.",
+      "rationale": "Encaja muy bien por stack y modalidad, pero el email por si solo no confirma anos exigidos ni seniority real. Con tu criterio conservador eso sigue siendo revisar, no aplicar ciegamente.",
+      "nextAction": "Abrir el JD completo y pasar a aplicar solo si el anuncio confirma 0-3 anos, mid-low razonable o una vacante claramente junior-friendly.",
+      "link": "https://mail.google.com/mail/#all/19f89050e6c49a8b",
+      "stackMatch": ["React", "Node.js", "Fullstack", "Remoto", "Producto digital"],
+      "missingSkills": ["Anos requeridos visibles", "Seniority visible", "Rango salarial", "Contexto del equipo"],
+      "experienceRequired": "No visible en el email.",
+      "compatibleExperience": "Muy compatible por stack y experiencia real en producto web/mobile, pero todavia sin permiso de aplicar solo desde el asunto.",
+      "risks": [
+        "Puede esconder una barra mid real al abrir el anuncio.",
+        "El correo no confirma seniority ni proceso."
+      ],
+      "advantages": [
+        "React + Node.js es tu combinacion mas limpia.",
+        "Remoto UE reduce friccion geografica."
+      ],
+      "whyApply": "Si revisar: es la mejor carta del inbox real de hoy.",
+      "emailKind": "Job alert real",
+      "sourcePlatform": "linkedin",
+      "sourceLabel": "LinkedIn",
+      "applicationStatus": "Pendiente de revisar",
+      "applicationRoute": "Alerta Gmail/LinkedIn",
+      "employmentType": "No visible",
+      "salaryRange": "No visible",
+      "relocationSupport": "No visible",
+      "links": [
+        {
+          "label": "Abrir email origen",
+          "url": "https://mail.google.com/mail/#all/19f89050e6c49a8b"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-23-pwc-junior-milano",
+      "section": "revisar",
+      "title": "Full Stack Developer Junior - Milano [IFS]",
+      "company": "PwC",
+      "location": "Milano, Lombardia",
+      "workMode": "No visible",
+      "level": "junior",
+      "decision": "revisar",
+      "priority": "alta",
+      "matchScore": 81,
+      "emailDate": "2026-07-23 11:10 EEST",
+      "sender": "Indeed",
+      "summary": "Es la mejor carta de Indeed hoy: junior explicito, stack web amplia con React y Node.js, y rango salarial visible para perfiles sin experiencia o minima.",
+      "rationale": "La oferta pide al menos un ano de experiencia web, buena base de JavaScript/react.js/angular/nuxt.js/node.js e ingles solido. Eso encaja mejor que varias opciones enterprise de Milano, pero sigue en revisar porque la ubicacion va por detras de remoto/Malta y el anuncio mezcla varias tecnologias que pueden endurecer el proceso.",
+      "nextAction": "Abrir el JD y aplicar si el formato logistico es viable y el proceso no penaliza demasiado no dominar Angular/Power Platform desde el inicio.",
+      "link": "https://to.indeed.com/aa7wrlmknlvv",
+      "stackMatch": ["JavaScript", "React", "Node.js", "HTML", "CSS", "Ingles C1"],
+      "missingSkills": ["Angular o Nuxt mas fuertes", "Power Platform", "Azure Logic Apps", "Ubicacion prioritaria"],
+      "experienceRequired": "Al menos 1 ano de experiencia en desarrollo web.",
+      "compatibleExperience": "Compatible de forma defendible con tu CV por stack web real, producto y nivel de ingles, aunque no es tu carta mas ligera logisticamente.",
+      "risks": [
+        "Milano no es tu mejor geografia frente a remoto/Malta.",
+        "Puede valorar bastante Angular o tooling Microsoft."
+      ],
+      "advantages": [
+        "Junior explicito.",
+        "Rango 25.500€-28.000€ visible para experiencia minima.",
+        "React y Node.js aparecen de forma directa."
+      ],
+      "whyApply": "Revisar con prioridad alta: es la mejor rescata de Indeed hoy.",
+      "emailKind": "Indeed search result",
+      "sourcePlatform": "indeed",
+      "sourceLabel": "Indeed",
+      "companyOverview": "Digital Factory interna de PwC para desarrollo y mantenimiento de soluciones custom.",
+      "companyIndustry": "Consultoria / software corporativo",
+      "companyLocation": "Italia",
+      "applicationStatus": "Pendiente de revisar",
+      "applicationRoute": "Busqueda Indeed fallback Milano",
+      "employmentType": "Full-time",
+      "salaryRange": "25.500€-28.000€ para experiencia nula o minima",
+      "relocationSupport": "No visible",
+      "links": [
+        {
+          "label": "Abrir oferta",
+          "url": "https://to.indeed.com/aa7wrlmknlvv"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-23-betsson-frontend-gaming",
+      "section": "revisar",
+      "title": "Frontend Software Engineer - Gaming",
+      "company": "Betsson Group",
+      "location": "La Valeta, Malta",
+      "workMode": "Hibrido",
+      "level": "mid",
+      "decision": "revisar",
+      "priority": "media",
+      "matchScore": 63,
+      "emailDate": "2026-07-23 06:50 UTC",
+      "sender": "Alertas de empleo de LinkedIn <jobalerts-noreply@linkedin.com>",
+      "summary": "Malta y frontend suman, pero el titulo no dice junior y el contexto gaming huele a barra media real.",
+      "rationale": "No activa descarte automatico porque no dice senior ni 5+ anos, y Malta sigue siendo objetivo geografico fuerte. Aun asi, sin senal de junioridad visible y con contexto gaming/hibrido, la decision correcta sigue siendo revisar con cautela.",
+      "nextAction": "Abrir solo si ya cerraste Hired y PwC y quieres medir si el JD realmente acepta 1-3 anos o relocation razonable.",
+      "link": "https://mail.google.com/mail/#all/19f8dbd24f980870",
+      "stackMatch": ["Frontend", "Malta", "Ingenieria de producto"],
+      "missingSkills": ["Seniority visible", "Rango de experiencia visible", "Remote fit"],
+      "experienceRequired": "No visible en el email.",
+      "compatibleExperience": "Compatibilidad media por frontend y Malta, pero sin prueba de que sea junior-friendly.",
+      "risks": [
+        "Puede ser un rol mid sin margen para aprendizaje.",
+        "Hibrido en Malta antes de tu mudanza."
+      ],
+      "advantages": [
+        "Malta suma mucho en geografia.",
+        "El foco frontend encaja mejor que varios fullstack enterprise."
+      ],
+      "whyApply": "Solo revisar si quieres explorar una carta frontera en Malta sin seniority explicita.",
+      "emailKind": "LinkedIn job alert",
+      "sourcePlatform": "linkedin",
+      "sourceLabel": "LinkedIn",
+      "applicationStatus": "Pendiente de revisar",
+      "applicationRoute": "Alerta Gmail/LinkedIn",
+      "employmentType": "No visible",
+      "salaryRange": "No visible",
+      "relocationSupport": "No visible",
+      "links": [
+        {
+          "label": "Abrir email origen",
+          "url": "https://mail.google.com/mail/#all/19f8dbd24f980870"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-23-digitalminds-junior-fullstack",
+      "section": "revisar",
+      "title": "JUNIOR FULL STACK DEVELOPER GESTIONALE",
+      "company": "DigitalMinds",
+      "location": "Lonate Pozzolo, Lombardia",
+      "workMode": "Hibrido, no full-remote",
+      "level": "junior",
+      "decision": "revisar",
+      "priority": "media",
+      "matchScore": 58,
+      "emailDate": "2026-07-23 11:10 EEST",
+      "sender": "Indeed",
+      "summary": "Junior explicito y 1 ano minimo ayudan, pero el stack principal se va a .NET Core + SQL y la modalidad no es remota completa.",
+      "rationale": "No la descarto porque es junior real y admite crecimiento, pero es una desviacion clara respecto a tu angulo mas fuerte React/Node/TypeScript/remoto. Queda muy por detras de Hired y PwC.",
+      "nextAction": "Guardar como opcion secundaria y abrir solo si quieres ampliar deliberadamente Italia/hibrido y toleras stack mas .NET/SQL.",
+      "link": "https://to.indeed.com/aapvtkdnvynh",
+      "stackMatch": ["HTML", "Trabajo en equipo", "Git probable", "Ingles preferencial"],
+      "missingSkills": [".NET Core como stack central", "SQL fuerte", "Remote fit", "React/TypeScript como foco"],
+      "experienceRequired": "Experiencia minima de 1 ano, perfil junior.",
+      "compatibleExperience": "Compatible solo de forma parcial; no es tu mejor posicion competitiva hoy.",
+      "risks": [
+        "Hibrido sin full-remote.",
+        "Stack principal alejado de tu mejor narrativa."
+      ],
+      "advantages": [
+        "Junior explicito.",
+        "Margen de crecimiento dentro del rol."
+      ],
+      "whyApply": "Revisar solo si se agotan las opciones mejores del dia.",
+      "emailKind": "Indeed search result",
+      "sourcePlatform": "indeed",
+      "sourceLabel": "Indeed",
+      "companyOverview": "Equipo de desarrollo de software gestionale con productos propios y clientes pymes/empresas.",
+      "companyIndustry": "Software empresarial",
+      "companyLocation": "Italia",
+      "applicationStatus": "Pendiente de revisar",
+      "applicationRoute": "Busqueda Indeed fallback Milano",
+      "employmentType": "Permanent",
+      "salaryRange": "No visible",
+      "relocationSupport": "No visible",
+      "links": [
+        {
+          "label": "Abrir oferta",
+          "url": "https://to.indeed.com/aapvtkdnvynh"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-23-github-api-load-gate",
+      "section": "urgente",
+      "title": "Run failed: API load gate - main",
+      "company": "GitHub Actions / eko-marketplace",
+      "location": "N/A",
+      "workMode": "N/A",
+      "level": "unknown",
+      "decision": "guardar",
+      "priority": "alta",
+      "matchScore": 0,
+      "emailDate": "2026-07-23 06:14 UTC",
+      "sender": "GitHub <notifications@github.com>",
+      "summary": "Urgencia operativa real del dia, pero fuera del radar de candidatura.",
+      "rationale": "No es oferta laboral ni recruiter, aunque si no lo separas contamina el bloque de postulacion justo en un dia de senal baja.",
+      "nextAction": "Abrir el run solo en un bloque tecnico aparte.",
+      "link": "https://mail.google.com/mail/#all/19f8d9c907110a4b",
+      "stackMatch": ["Operacion tecnica"],
+      "missingSkills": [],
+      "experienceRequired": "N/A",
+      "compatibleExperience": "Fuera del radar laboral.",
+      "risks": [
+        "Consumir tiempo de candidaturas por mezclar contextos."
+      ],
+      "advantages": [
+        "Accion operativa concreta."
+      ],
+      "whyApply": "No aplica; solo separar.",
+      "emailKind": "CI failure notification",
+      "sourcePlatform": "other",
+      "sourceLabel": "GitHub",
+      "applicationStatus": "No aplica",
+      "applicationRoute": "GitHub Actions",
+      "employmentType": "N/A",
+      "salaryRange": "N/A",
+      "relocationSupport": "N/A",
+      "links": [
+        {
+          "label": "Abrir email origen",
+          "url": "https://mail.google.com/mail/#all/19f8d9c907110a4b"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-23-miro-newsletter",
+      "section": "newsletter",
+      "title": "Como un banco belga creo un asistente inteligente escuchando a sus clientes",
+      "company": "Miro",
+      "location": "Online",
+      "workMode": "N/A",
+      "level": "unknown",
+      "decision": "guardar",
+      "priority": "baja",
+      "matchScore": 22,
+      "emailDate": "2026-07-22 08:36 UTC",
+      "sender": "Miro",
+      "summary": "No es una oferta, pero si una newsletter tecnica util sobre producto, IA aplicada y prototipado.",
+      "rationale": "Conviene separarla de las candidaturas para no contaminar el radar laboral, pero no merece ir a irrelevante porque si aporta ideas de producto y tooling.",
+      "nextAction": "Guardar para leer fuera del bloque de postulacion.",
+      "link": "https://mail.google.com/mail/#all/19f88f87ff9c8bd0",
+      "stackMatch": ["Producto", "IA aplicada", "Prototipado"],
+      "missingSkills": [],
+      "experienceRequired": "N/A",
+      "compatibleExperience": "No aplica como candidatura.",
+      "risks": [
+        "Perder tiempo laboral si se abre ahora."
+      ],
+      "advantages": [
+        "Contenido util separado del ruido."
+      ],
+      "whyApply": "No aplicar; solo guardar.",
+      "emailKind": "Newsletter tecnica",
+      "sourcePlatform": "other",
+      "sourceLabel": "Miro",
+      "applicationStatus": "No aplica",
+      "applicationRoute": "Email",
+      "employmentType": "N/A",
+      "salaryRange": "N/A",
+      "relocationSupport": "N/A",
+      "links": [
+        {
+          "label": "Abrir email origen",
+          "url": "https://mail.google.com/mail/#all/19f88f87ff9c8bd0"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-23-betsson-senior-fullstack",
+      "section": "descartada",
+      "title": "Sportsbook - Senior Fullstack Software Engineer",
+      "company": "Betsson Group",
+      "location": "La Valeta, Malta",
+      "workMode": "Hibrido",
+      "level": "senior",
+      "decision": "descartar",
+      "priority": "baja",
+      "matchScore": 18,
+      "emailDate": "2026-07-22 06:50 UTC",
+      "sender": "Alertas de empleo de LinkedIn <jobalerts-noreply@linkedin.com>",
+      "summary": "Malta no salva una oferta con `Senior` en el titulo.",
+      "rationale": "Tus reglas de descarte aqui son directas: senior explicito se va fuera sin mas debate.",
+      "nextAction": "No abrir.",
+      "link": "https://mail.google.com/mail/#all/19f8896d01872d6f",
+      "stackMatch": ["Malta"],
+      "missingSkills": ["Seniority compatible"],
+      "experienceRequired": "Senior.",
+      "compatibleExperience": "No compatible con tu objetivo actual.",
+      "risks": [
+        "Perder tiempo por sesgo geografico."
+      ],
+      "advantages": [
+        "Solo la geografia."
+      ],
+      "whyApply": "No aplicar: descarte automatico por seniority.",
+      "emailKind": "LinkedIn job alert",
+      "sourcePlatform": "linkedin",
+      "sourceLabel": "LinkedIn",
+      "applicationStatus": "Descartada",
+      "applicationRoute": "Alerta Gmail/LinkedIn",
+      "employmentType": "No visible",
+      "salaryRange": "No visible",
+      "relocationSupport": "No visible",
+      "links": [
+        {
+          "label": "Abrir email origen",
+          "url": "https://mail.google.com/mail/#all/19f8896d01872d6f"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-23-indeed-digest-false-positives",
+      "section": "descartada",
+      "title": "9 uutta työpaikkaa: junior - Malta",
+      "company": "Indeed job alerts",
+      "location": "Malta / Finlandia mezclado",
+      "workMode": "Mixto",
+      "level": "unknown",
+      "decision": "descartar",
+      "priority": "baja",
+      "matchScore": 10,
+      "emailDate": "2026-07-23 03:00 UTC",
+      "sender": "Indeed <donotreply@jobalert.indeed.com>",
+      "summary": "El digest vuelve a mezclar falsos positivos con AI, legal y senior roles fuera de tu foco real.",
+      "rationale": "Hoy mismo el asunto promete `junior - Malta`, pero el contenido visible arranca con `Junior AI Developer` en Helsinki y mete ruido fuera de stack, geografia y seniority objetivo.",
+      "nextAction": "Mover a Trash despues del corte.",
+      "link": "https://mail.google.com/mail/#all/19f8ba455a2c2328",
+      "stackMatch": ["Junior nominal"],
+      "missingSkills": ["Stack React/Node consistente", "Geografia Malta real", "Filtro limpio"],
+      "experienceRequired": "Mixto e inconsistente.",
+      "compatibleExperience": "No compatible como radar confiable.",
+      "risks": [
+        "Te roba tiempo con falsos positivos."
+      ],
+      "advantages": [
+        "Ninguna relevante para hoy."
+      ],
+      "whyApply": "No aplicar: digest contaminado.",
+      "emailKind": "Indeed digest",
+      "sourcePlatform": "indeed",
+      "sourceLabel": "Indeed",
+      "applicationStatus": "Descartada",
+      "applicationRoute": "Email digest",
+      "employmentType": "Mixto",
+      "salaryRange": "Mixto",
+      "relocationSupport": "No visible",
+      "links": [
+        {
+          "label": "Abrir email origen",
+          "url": "https://mail.google.com/mail/#all/19f8ba455a2c2328"
+        }
+      ]
+    }
+  ]
+}
