@@ -1,0 +1,412 @@
+{
+  "date": "2026-07-24",
+  "source": "CV local real + Gmail real + Indeed fallback Italia/Sicilia",
+  "visualUrl": "file:///Users/developer/resumen/dist/index.html?date=2026-07-24",
+  "summary": "El corte real del viernes 24 de julio de 2026 viene con poca senal buena y bastante ruido: Gmail no trajo ninguna oferta con permiso limpio de aplicar, pero si dejo dos revisiones defensibles y varios descartes claros. En LinkedIn, `Digital Waffle - Full Stack Engineer` gana atencion solo por Malta/remoto, pero sigue frenada por el angulo `Agentic AI` y la falta de junioridad visible; `MultiSafepay - Fullstack Developer` cae por modalidad hibrida en Espana fuera de tu radio prioritario. Indeed repitio el limite `Unsupported country code: MT`, asi que la rama complementaria se movio de forma visible a Sicilia: ahi la mejor carta del dia es `STMicroelectronics - Internship – Full Stack Web Application Developer`, mientras el resto del lote cae por seniority o stack/logistica. No hubo recruiters ni entrevistas nuevas. Dashboard local esperado tras build: file:///Users/developer/resumen/dist/index.html?date=2026-07-24. URL publicada esperada tras push: https://resumensemanal.netlify.app/?date=2026-07-24.",
+  "searchFocus": [
+    "Junior, intern, trainee, graduate y fullstack/frontend de 0-3 anos antes que mid, senior o architect",
+    "React, React Native, TypeScript, Node.js, NestJS, Spring Boot y producto digital por encima de AI/DevOps/cloud avanzados",
+    "Malta primero; si Indeed falla con MT, fallback visible a Italia/Sicilia sin disfrazar la limitacion"
+  ],
+  "connectorFindings": [
+    {
+      "connector": "gmail",
+      "status": "ok",
+      "headline": "Gmail siguio siendo la fuente base real del dia",
+      "detail": "Entraron una alerta de LinkedIn para Malta, otra para Espana, un rechazo no-tech de Bolt y una urgencia operativa de GitHub; no hubo recruiters ni entrevistas nuevas."
+    },
+    {
+      "connector": "indeed",
+      "status": "limited",
+      "headline": "Indeed volvio a fallar con Malta el 2026-07-24",
+      "detail": "El conector devolvio otra vez `Unsupported country code: MT`; el fallback visible a Sicilia si produjo resultados, pero solo STMicroelectronics quedo como revision fuerte."
+    },
+    {
+      "connector": "linkedin",
+      "status": "ok",
+      "headline": "LinkedIn aporto una carta frontera y varios descartes claros",
+      "detail": "Digital Waffle remoto en Malta merece lectura manual; MultiSafepay y los senior de los digests no pasan el filtro conservador."
+    }
+  ],
+  "topActions": [
+    "Abrir primero `STMicroelectronics - Internship – Full Stack Web Application Developer` y aplicar solo si la logistica en Sicilia o un arranque flexible son viables para ti.",
+    "Revisar despues `Digital Waffle - Full Stack Engineer` solo para confirmar si el foco `Agentic AI` sigue siendo demasiado exigente o si realmente admite un perfil fullstack mid-low.",
+    "No gastar tiempo en `MultiSafepay`, los senior de los digests, el rechazo no-tech de Bolt ni el fallo de GitHub durante el bloque de postulacion."
+  ],
+  "stats": {
+    "total": 8,
+    "aplicar": 0,
+    "revisar": 2,
+    "descartar": 3,
+    "alta": 3
+  },
+  "items": [
+    {
+      "id": "2026-07-24-stmicroelectronics-intern-fullstack",
+      "section": "revisar",
+      "title": "Internship - Full Stack Web Application Developer - ST eDesignSuite",
+      "company": "STMicroelectronics",
+      "location": "Catania, Sicilia",
+      "workMode": "Presencial o hibrido no visible",
+      "level": "intern",
+      "decision": "revisar",
+      "priority": "alta",
+      "matchScore": 79,
+      "emailDate": "2026-07-24 13:02 EEST",
+      "sender": "Indeed fallback Sicilia",
+      "summary": "Es la mejor carta complementaria del dia: internship explicito, React/TypeScript + APIs, ingles y una descripcion que no exige llegar como experto.",
+      "rationale": "Encaja bien con tu stack y con la preferencia por roles de entrada. No la paso a aplicar automaticamente porque la logistica en Sicilia pesa bastante mas que Malta/remoto y el anuncio no aclara flexibilidad de ubicacion.",
+      "nextAction": "Abrir la oferta y aplicar solo si aceptan una transicion logistica razonable o si el internship admite un arranque flexible.",
+      "link": "https://to.indeed.com/aaqbh9lg7lbp",
+      "stackMatch": ["React", "TypeScript", "REST APIs", "Full Stack", "English C1"],
+      "missingSkills": ["Angular mas fuerte", "CI/CD opcional", "Ubicacion alineada con Malta/remote"],
+      "experienceRequired": "Internship; acepta perfil en crecimiento con grado en curso o completado.",
+      "compatibleExperience": "Compatible de forma defendible con tu CV por web/mobile, React, Node.js, APIs y trabajo en producto.",
+      "risks": [
+        "Catania no es tu geografia prioritaria.",
+        "El dominio semiconductor puede endurecer el contexto del equipo."
+      ],
+      "advantages": [
+        "Internship explicito y junior-friendly.",
+        "No espera experticia completa desde el dia uno.",
+        "React y servicios backend aparecen en el JD."
+      ],
+      "whyApply": "Si revisar: es la carta mas sana de Indeed hoy.",
+      "emailKind": "Indeed search result",
+      "sourcePlatform": "indeed",
+      "sourceLabel": "Indeed",
+      "companyOverview": "Multinacional de semiconductores con equipos globales de tooling interno y simulacion web.",
+      "companyIndustry": "Semiconductores / software de ingenieria",
+      "companySize": "50,000+",
+      "companyStage": "Enterprise global",
+      "companyLocation": "Italia",
+      "applicationStatus": "Pendiente de revisar",
+      "applicationRoute": "Busqueda Indeed fallback Catania",
+      "employmentType": "Internship",
+      "salaryRange": "No visible",
+      "relocationSupport": "No visible",
+      "links": [
+        {
+          "label": "Abrir oferta",
+          "url": "https://to.indeed.com/aaqbh9lg7lbp"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-24-digital-waffle-full-stack-engineer",
+      "section": "revisar",
+      "title": "Full Stack Engineer",
+      "company": "Digital Waffle",
+      "location": "Malta",
+      "workMode": "Remoto",
+      "level": "unknown",
+      "decision": "revisar",
+      "priority": "media",
+      "matchScore": 54,
+      "emailDate": "2026-07-24 08:50 UTC",
+      "sender": "Alertas de empleo de LinkedIn <jobalerts-noreply@linkedin.com>",
+      "summary": "Malta + remoto suman, pero el subtitulo `Agentic AI` sigue alejandola de tu narrativa mas fuerte y el email no demuestra que sea junior-friendly.",
+      "rationale": "No la descarto porque la geografia y la modalidad son buenas, pero el foco AI/agentic y la ausencia de junioridad visible hacen que el riesgo de perder tiempo sea alto. Con tu criterio conservador, sigue siendo revisar y no aplicar.",
+      "nextAction": "Abrir el JD solo si primero agotaste la carta de STMicroelectronics y quieres comprobar si realmente es fullstack generalista y no un rol AI avanzado.",
+      "link": "https://www.linkedin.com/comm/jobs/view/4443808995/?trackingId=UfaLW7nmnzgXddGW%2BFxwrw%3D%3D&refId=sCILfWqqIyb3nj1pXHnEDQ%3D%3D",
+      "stackMatch": ["Full Stack", "Remoto", "Malta", "JavaScript probable"],
+      "missingSkills": ["Seniority visible", "Experiencia requerida visible", "AI/LLM scope claro"],
+      "experienceRequired": "No visible en el email.",
+      "compatibleExperience": "Compatibilidad media: tu stack web ayuda, pero el angulo AI no es hoy tu mejor carta competitiva.",
+      "risks": [
+        "Puede esconder una barra tecnica claramente mas alta.",
+        "El foco agentic AI puede desplazar React/Node a un segundo plano."
+      ],
+      "advantages": [
+        "Malta sigue siendo la mejor geografia objetivo.",
+        "Remoto reduce friccion logistica."
+      ],
+      "whyApply": "Solo revisar: buena geografia, pero fit tecnico dudoso.",
+      "emailKind": "LinkedIn job alert",
+      "sourcePlatform": "linkedin",
+      "sourceLabel": "LinkedIn",
+      "applicationStatus": "Pendiente de revisar",
+      "applicationRoute": "Alerta Gmail/LinkedIn",
+      "employmentType": "No visible",
+      "salaryRange": "No visible en el email",
+      "relocationSupport": "No visible",
+      "links": [
+        {
+          "label": "Abrir oferta",
+          "url": "https://www.linkedin.com/comm/jobs/view/4443808995/?trackingId=UfaLW7nmnzgXddGW%2BFxwrw%3D%3D&refId=sCILfWqqIyb3nj1pXHnEDQ%3D%3D"
+        },
+        {
+          "label": "Abrir email origen",
+          "url": "https://mail.google.com/mail/#all/19f935174ac79596"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-24-multisafepay-fullstack",
+      "section": "descartada",
+      "title": "Fullstack Developer",
+      "company": "MultiSafepay",
+      "location": "Estepona, Espana",
+      "workMode": "Hibrido",
+      "level": "unknown",
+      "decision": "descartar",
+      "priority": "baja",
+      "matchScore": 38,
+      "emailDate": "2026-07-24 06:50 UTC",
+      "sender": "Alertas de empleo de LinkedIn <jobalerts-noreply@linkedin.com>",
+      "summary": "No hay junioridad visible y la modalidad hibrida en Espana queda fuera de tu radio prioritario actual.",
+      "rationale": "Tus reglas de descarte son claras aqui: presencial/hibrido fuera de Finlandia, Malta o remoto, sin relocation visible, no merece tiempo aunque el titulo no diga senior.",
+      "nextAction": "No abrir.",
+      "link": "https://www.linkedin.com/comm/jobs/view/4441537013/?trackingId=hbw6vkRi77Ku1u0Wl%2BCl5A%3D%3D&refId=DbYoHYcompw1qrWJlp6SWw%3D%3D",
+      "stackMatch": ["Fullstack nominal"],
+      "missingSkills": ["Remote fit", "Malta/Finlandia fit", "Junioridad visible"],
+      "experienceRequired": "No visible en el email.",
+      "compatibleExperience": "No compatible por logistica, mas que por stack.",
+      "risks": [
+        "Consumir tiempo en una geografia fuera de foco.",
+        "Puede requerir presencia local no viable."
+      ],
+      "advantages": [
+        "Solo el titulo generalista."
+      ],
+      "whyApply": "No aplicar: descarte logistico conservador.",
+      "emailKind": "LinkedIn job alert",
+      "sourcePlatform": "linkedin",
+      "sourceLabel": "LinkedIn",
+      "applicationStatus": "Descartada",
+      "applicationRoute": "Alerta Gmail/LinkedIn",
+      "employmentType": "No visible",
+      "salaryRange": "No visible",
+      "relocationSupport": "No visible",
+      "links": [
+        {
+          "label": "Abrir oferta",
+          "url": "https://www.linkedin.com/comm/jobs/view/4441537013/?trackingId=hbw6vkRi77Ku1u0Wl%2BCl5A%3D%3D&refId=DbYoHYcompw1qrWJlp6SWw%3D%3D"
+        },
+        {
+          "label": "Abrir email origen",
+          "url": "https://mail.google.com/mail/#all/19f92e39290f30d0"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-24-amusnet-senior-software-engineer",
+      "section": "descartada",
+      "title": "Senior Software Engineer",
+      "company": "Amusnet",
+      "location": "Malta",
+      "workMode": "No visible",
+      "level": "senior",
+      "decision": "descartar",
+      "priority": "baja",
+      "matchScore": 16,
+      "emailDate": "2026-07-24 08:50 UTC",
+      "sender": "Alertas de empleo de LinkedIn <jobalerts-noreply@linkedin.com>",
+      "summary": "Malta no compensa un `Senior` explicito en el titulo.",
+      "rationale": "El descarte es automatico por seniority visible. No merece lectura adicional.",
+      "nextAction": "No abrir.",
+      "link": "https://mail.google.com/mail/#all/19f935174ac79596",
+      "stackMatch": ["Malta"],
+      "missingSkills": ["Seniority compatible"],
+      "experienceRequired": "Senior.",
+      "compatibleExperience": "No compatible con tu objetivo actual.",
+      "risks": [
+        "Sesgo geografico hacia Malta."
+      ],
+      "advantages": [
+        "Solo la geografia."
+      ],
+      "whyApply": "No aplicar: descarte automatico por seniority.",
+      "emailKind": "LinkedIn job alert",
+      "sourcePlatform": "linkedin",
+      "sourceLabel": "LinkedIn",
+      "applicationStatus": "Descartada",
+      "applicationRoute": "Alerta Gmail/LinkedIn",
+      "employmentType": "No visible",
+      "salaryRange": "No visible",
+      "relocationSupport": "No visible",
+      "links": [
+        {
+          "label": "Abrir email origen",
+          "url": "https://mail.google.com/mail/#all/19f935174ac79596"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-24-keyover-dotnet-middle",
+      "section": "descartada",
+      "title": "Developer .NET Middle",
+      "company": "KeyOver SRL",
+      "location": "Catania, Sicilia",
+      "workMode": "Work from home con viajes",
+      "level": "mid",
+      "decision": "descartar",
+      "priority": "baja",
+      "matchScore": 27,
+      "emailDate": "2026-07-24 13:02 EEST",
+      "sender": "Indeed fallback Sicilia",
+      "summary": "El conector encontro una carta reciente, pero cae por `Middle`, 3+ anos y stack .NET enterprise con viajes a Roma.",
+      "rationale": "Encaja mal con tu foco actual: pide 3+ anos comprobados en .NET y un perfil bastante mas backend/enterprise del que quieres priorizar hoy.",
+      "nextAction": "No abrir.",
+      "link": "https://to.indeed.com/aafxlsqdphrx",
+      "stackMatch": ["PostgreSQL", "Docker basico"],
+      "missingSkills": [".NET principal", "3+ anos requeridos", "Travel fit", "Cloud/microservicios enterprise"],
+      "experienceRequired": "Middle con 3+ anos demostrables.",
+      "compatibleExperience": "No compatible con tu filtro junior-first.",
+      "risks": [
+        "Rol claramente fuera de alcance actual.",
+        "Viajes periodicos a Roma."
+      ],
+      "advantages": [
+        "Trabajo desde casa parcial."
+      ],
+      "whyApply": "No aplicar: descarte por seniority y stack principal.",
+      "emailKind": "Indeed search result",
+      "sourcePlatform": "indeed",
+      "sourceLabel": "Indeed",
+      "companyOverview": "Consultora/empresa ICT enfocada en soluciones enterprise e IoT.",
+      "companyIndustry": "Software enterprise",
+      "companyLocation": "Italia",
+      "applicationStatus": "Descartada",
+      "applicationRoute": "Busqueda Indeed fallback Catania",
+      "employmentType": "Permanent",
+      "salaryRange": "27.000 EUR - 36.000 EUR",
+      "relocationSupport": "No visible",
+      "links": [
+        {
+          "label": "Abrir oferta",
+          "url": "https://to.indeed.com/aafxlsqdphrx"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-24-github-api-load-gate",
+      "section": "urgente",
+      "title": "Run failed: API load gate - main",
+      "company": "GitHub Actions / eko-marketplace",
+      "location": "N/A",
+      "workMode": "N/A",
+      "level": "unknown",
+      "decision": "guardar",
+      "priority": "alta",
+      "matchScore": 0,
+      "emailDate": "2026-07-24 06:08 UTC",
+      "sender": "GitHub <notifications@github.com>",
+      "summary": "Urgencia operativa real del dia, separada del bloque laboral.",
+      "rationale": "No es oferta ni recruiter. Si se mezcla con postulaciones, te roba foco en un dia de senal baja.",
+      "nextAction": "Abrir el workflow en un bloque tecnico aparte.",
+      "link": "https://mail.google.com/mail/#all/19f92bdb6d4b721c",
+      "stackMatch": ["Operacion tecnica"],
+      "missingSkills": [],
+      "experienceRequired": "N/A",
+      "compatibleExperience": "Fuera del radar laboral.",
+      "risks": [
+        "Consumir tiempo de candidatura por mezclar contextos."
+      ],
+      "advantages": [
+        "Accion operativa concreta."
+      ],
+      "whyApply": "No aplica; solo separar.",
+      "emailKind": "CI failure notification",
+      "sourcePlatform": "other",
+      "sourceLabel": "GitHub",
+      "applicationStatus": "No aplica",
+      "applicationRoute": "Email",
+      "employmentType": "N/A",
+      "salaryRange": "N/A",
+      "relocationSupport": "N/A",
+      "links": [
+        {
+          "label": "Abrir email origen",
+          "url": "https://mail.google.com/mail/#all/19f92bdb6d4b721c"
+        },
+        {
+          "label": "Abrir workflow",
+          "url": "https://github.com/Angel-cuba/eko-marketplace/actions/runs/30071130679"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-24-bolt-rejection-lieto",
+      "section": "irrelevante",
+      "title": "Information about your application: Rakennusaputyöntekijä Lieto",
+      "company": "Bolt.Works",
+      "location": "Finlandia",
+      "workMode": "N/A",
+      "level": "unknown",
+      "decision": "descartar",
+      "priority": "baja",
+      "matchScore": 0,
+      "emailDate": "2026-07-24 09:03 EEST",
+      "sender": "bolt-system@bolt.works",
+      "summary": "Es un rechazo de un rol no-tech fuera del radar principal de este dashboard.",
+      "rationale": "Conviene registrarlo solo como ruido cerrado y moverlo a Trash; no debe contaminar el corte de software.",
+      "nextAction": "Mover a Trash.",
+      "link": "https://mail.google.com/mail/#all/19f935de8a6e5c97",
+      "stackMatch": [],
+      "missingSkills": [],
+      "experienceRequired": "N/A",
+      "compatibleExperience": "Fuera del radar tech.",
+      "risks": [
+        "Ninguno laboral; solo ruido."
+      ],
+      "advantages": [],
+      "whyApply": "No aplica.",
+      "emailKind": "Application rejection",
+      "sourcePlatform": "other",
+      "sourceLabel": "Bolt.Works",
+      "applicationStatus": "Cerrada",
+      "applicationRoute": "Email",
+      "employmentType": "N/A",
+      "salaryRange": "N/A",
+      "relocationSupport": "N/A",
+      "links": [
+        {
+          "label": "Abrir email origen",
+          "url": "https://mail.google.com/mail/#all/19f935de8a6e5c97"
+        }
+      ]
+    },
+    {
+      "id": "2026-07-24-claude-usage-credits",
+      "section": "irrelevante",
+      "title": "Fable 5 has moved to usage credits",
+      "company": "Claude",
+      "location": "Online",
+      "workMode": "N/A",
+      "level": "unknown",
+      "decision": "descartar",
+      "priority": "baja",
+      "matchScore": 0,
+      "emailDate": "2026-07-24 07:16 UTC",
+      "sender": "Claude Team <no-reply@email.claude.com>",
+      "summary": "Mensaje promocional/operativo sin valor para el corte laboral.",
+      "rationale": "No es oferta, recruiter ni entrevista. Debe quedar fuera del radar y es candidato claro a Trash.",
+      "nextAction": "Mover a Trash.",
+      "link": "https://mail.google.com/mail/#all/19f92fbc10f2da9e",
+      "stackMatch": [],
+      "missingSkills": [],
+      "experienceRequired": "N/A",
+      "compatibleExperience": "No aplica.",
+      "risks": [
+        "Solo distrae."
+      ],
+      "advantages": [],
+      "whyApply": "No aplica.",
+      "emailKind": "Promo / product update",
+      "sourcePlatform": "other",
+      "sourceLabel": "Claude",
+      "applicationStatus": "No aplica",
+      "applicationRoute": "Email",
+      "employmentType": "N/A",
+      "salaryRange": "N/A",
+      "relocationSupport": "N/A",
+      "links": [
+        {
+          "label": "Abrir email origen",
+          "url": "https://mail.google.com/mail/#all/19f92fbc10f2da9e"
+        }
+      ]
+    }
+  ]
+}
